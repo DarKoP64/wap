@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora básica</title>
+  <link rel="stylesheet" href="Css/estilosO.css">
+</head>
+<body>
+
+<div class="contenedor">
+  <h1>Calculadora básica</h1>
+
+  <label for="numero1">Primer número:</label>
+  <input type="number" id="numero1" placeholder="Ingrese el primer número">
+
+  <label for="numero2">Segundo número:</label>
+  <input type="number" id="numero2" placeholder="Ingrese el segundo número">
+
+  <label for="operacion">Operación:</label>
+  <select id="operacion">
+    <option value="sumar">Sumar</option>
+    <option value="restar">Restar</option>
+    <option value="multiplicar">Multiplicar</option>
+    <option value="dividir">Dividir</option>
+  </select>
+
+  <button onclick="calcular()">Calcular</button>
+
+  <label for="resultado">Resultado:</label>
+  <input type="text" id="resultado" readonly>
+</div>
+
+<div style="text-align: center; margin-top: 40px;">
+  <a href="index.html">
+    <button class="boton-volver">Volver al menú principal</button>
+  </a>
+</div>
+
+<script src="Js\scripts.js"></script>
+
+
+</body>
+</html>
